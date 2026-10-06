@@ -207,19 +207,27 @@ main > p{
 
 .genre-container{
   color: red;
-  display: flex;
+  /* display: flex; */
   margin-top: 40px;
   gap: 40px;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 400px 400px 400px 400px 400px 400px;
+  overflow-x: auto;
 }
 
 .genre-child{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background-color: #3f3f3f;
-  min-height: 308px;
+  background-image: url(./image/wave.png);
+  background-size: cover;
+  background-position: center;
+  height: 319px;
   width: 396px;
   border-radius: 20px;
 }
 
-.genre-child > img{
-  border: 2px solid red;
+.genre-child > p{
+  display: inline;
 }
