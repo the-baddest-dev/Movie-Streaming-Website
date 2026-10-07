@@ -213,8 +213,13 @@ main > p{
 
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 400px 400px 400px 400px 400px 400px;
+  grid-auto-columns: 400px;
   overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.genre-container::-webkit-scrollbar{
+  display: none;
 }
 
 .genre-child{
@@ -222,12 +227,16 @@ main > p{
   background-color: #3f3f3f;
   background-image: url(./image/wave.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 319px;
   width: 396px;
   border-radius: 20px;
+  color: #FFF8EA;
 }
 
 .genre-child > p{
-  display: inline;
+  /* display: inline; */
+  font-size: 32px;
+  font-weight: 500;
+  padding: 25px 0 0 45px;
 }
