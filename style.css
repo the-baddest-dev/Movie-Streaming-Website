@@ -210,7 +210,6 @@ main > p{
   /* display: flex; */
   margin-top: 40px;
   gap: 40px;
-
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 400px;
@@ -228,8 +227,8 @@ main > p{
   background-image: url(./image/wave.png);
   background-size: cover;
   background-position: bottom;
-  height: 319px;
-  width: 396px;
+  height: 320px;
+  width: 420px;
   border-radius: 20px;
   color: #FFF8EA;
 }
@@ -239,4 +238,33 @@ main > p{
   font-size: 32px;
   font-weight: 500;
   padding: 25px 0 0 45px;
+}
+
+.genre-child > img{
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 202.14px;
+  width: 121px;
+}
+
+.genre-child:nth-child(1){
+  position: relative;
+}
+
+.genre-child:nth-child(1) img:nth-child(2){
+  /* border: 2px solid orange; */
+  transform: rotate(-29.78deg) translate(60px, 60px);
+}
+
+.genre-child:nth-child(1) img:nth-child(3){
+  /* border: 2px solid orange; */
+  transform: rotate(31.2deg) translate(50px, -20px);
+}
+
+.genre-child:nth-child(1) img:nth-child(4){
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 160px;
+  top: 99px;
 }
