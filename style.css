@@ -249,42 +249,54 @@ main > p{
   width: 121px;
 }
 
-.genre-child:nth-child(1) img{
+.genre-child:nth-child(1) img,
+.genre-child:nth-child(2) img{
   /* border: 2px solid beige; */
   transition: transform 0.5s ease;
 }
 
-.genre-child:nth-child(1) img:nth-child(2){
+.genre-child:nth-child(1) img:nth-child(2),
+.genre-child:nth-child(2) img:nth-child(2){
   /* border: 2px solid red; */
-  /* transform: translate(-120px, -25px); */
   transform: translate(150px, 16px);
   z-index: 100;
   position: relative;
 }
 
-.genre-child:nth-child(1) img:nth-child(3){
+.genre-child:nth-child(1) img:nth-child(3),
+.genre-child:nth-child(2) img:nth-child(3){
   /* border: 2px solid orange; */
   transform: rotate(-29.78deg) translate(-20px, 0px);
 }
 
-.genre-child:nth-child(1) img:nth-child(4){
+.genre-child:nth-child(1) img:nth-child(4),
+.genre-child:nth-child(2) img:nth-child(4){
   /* border: 2px solid orange; */
   transform: rotate(31.2deg) translate(-30px, 25px);
 }
 
-.genre-child:nth-child(1) img:nth-child(3):hover{
-  transform: rotate(-29.78deg) translate(-20px, -30px);
+.genre-child:nth-child(1) img:nth-child(3):hover,
+.genre-child:nth-child(2) img:nth-child(3):hover{
+  transform: rotate(-29.78deg) translate(-0px, -40px);
 }
 
-.genre-child:nth-child(1) img:nth-child(4):hover{
+.genre-child:nth-child(1) img:nth-child(4):hover,
+.genre-child:nth-child(2) img:nth-child(4):hover{
   /* border: 2px solid orange; */
-  transform: rotate(31.2deg) translate(-30px, -30px);
+  transform: rotate(31.2deg) translate(-60px, -20px);
 }
 
-.genre-child:nth-child(1) img:nth-child(2):hover{
+.genre-child:nth-child(1) img:nth-child(2):hover,
+.genre-child:nth-child(2) img:nth-child(2):hover{
   transform: translate(150px, -20px);
 }
 
-.genre-child:nth-child(1) img:nth-child(2) ~ img:nth-child(3){
-  /* transform: rotate(-29.78deg) translate(-20px, -30px); */
+.genre-child:nth-child(1) img:nth-child(2):hover ~ img:nth-child(3),
+.genre-child:nth-child(2) img:nth-child(2):hover ~ img:nth-child(3){
+  transform: rotate(-29.78deg) translate(-0px, -40px);
+}
+
+.genre-child:nth-child(1) img:nth-child(2):hover ~ img:nth-child(4),
+.genre-child:nth-child(2) img:nth-child(2):hover ~ img:nth-child(4){
+  transform: rotate(31.2deg) translate(-60px, -20px);
 }
