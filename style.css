@@ -330,27 +330,27 @@ main > p{
 }
 
 .new-container{
-  display: grid;
-  color: #FFFFFF;
-  grid-template-columns: repeat(6, minmax(300px, 320px));
-  height: 356px;
-  gap: 60px;
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
   overflow-x: scroll;
-  margin-top: 30px;
   scrollbar-width: none;
-  overflow-y: hidden;
 }
 
 .new-container::-webkit-scrollbar{
   display: none;
 }
 
-.new-child img{
+.new-child{
   /* border: 2px solid yellow; */
   width: 300px;
-  height: 356px;
-  object-fit: cover;
-  border-radius: 20px;
-  
+  height: 336px;
+  flex: 0 0 300px;
 }
 
+.new-child img{
+  width: 300px;
+  height: 336px;
+  object-fit: cover;
+  border-radius: 20px;
+}
