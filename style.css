@@ -463,6 +463,11 @@ main > p{
   padding: 2px 15px;
 }
 
+.trailer-child:nth-child(2):hover{
+  background-color: #ffb628;
+  border: 2px solid #ffb628;
+}
+
 .trailer-child{
   display: flex;
   align-items: center;
