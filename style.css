@@ -562,3 +562,69 @@ main > p{
 .movie-child2 p{
   display: inline;
 }
+
+.top10{
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+
+.top10 > p{
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.top10-container{
+  display: flex;
+  flex-shrink: 0;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.top10-container::-webkit-scrollbar{
+  display: none;
+}
+
+.top10-child{
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.number-image{
+  /* border: 2px solid pink; */
+  width: 77px;
+  height: 190px;
+  object-fit: contain;
+}
+
+.first-image{
+  width: 300px;
+  height: 355px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.second-image{
+  border: 2px solid red;
+  width: 600px;
+  height: 355px;
+  object-fit: cover;
+  position: absolute;
+  /* inset: 0; */
+  opacity: 0;
+}
+
+/* .first-image:hover .second-image{
+  border: 2px solid green;
+  opacity: 1;
+} */
+
+.first-image:hover{
+  opacity: 0;
+}
+
+
