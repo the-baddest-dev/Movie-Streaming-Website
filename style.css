@@ -472,7 +472,7 @@ main > p{
 .top10-container{
   margin-top: 40px;
   display: flex;
-  gap: 100px;
+  gap: 70px;
   overflow-x: scroll;
   scrollbar-width: none;
 }
@@ -487,11 +487,27 @@ main > p{
   flex-shrink: 0;
 }
 
+/* I don't understand this part yet */
+
 .top10-child > p{
   -webkit-text-stroke: 1px #ffffff;
   color: transparent;
   font-size: 200px;
   font-weight: 500;
+  position: relative;
+  isolation: isolate;
+}
+
+.top10-child > p::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 80%;
+  width: 260px;
+  height: 260px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #ffb628 0%, #ffb628 35%, transparent 70%);
 }
 
 .top10-first{
@@ -499,6 +515,7 @@ main > p{
   height: 355px;
   object-fit: cover;
   border-radius: 20px;
+  /* border: 2px solid purple; */
 }
 
 .top10-second{
